@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - HelloWorld",
             "request": "launch",
+            "mainClass": "src.aula_1.HelloWorld",
+            "projectName": "desenvolvedor_android_2fb6ef08"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
             "mainClass": "aula_1.HelloWorld",
             "projectName": "desenvolvedor_android_2fb6ef08"
         }
