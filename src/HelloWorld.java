@@ -1,4 +1,4 @@
-package src.aula_1;
+package src;
 
 public class HelloWorld {
 
