@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Operacoes",
+            "request": "launch",
+            "mainClass": "src.Operacoes",
+            "projectName": "desenvolvedor_android_2fb6ef08"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Funcao",
             "request": "launch",
             "mainClass": "src.Funcao",
