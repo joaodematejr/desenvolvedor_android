@@ -3,11 +3,15 @@ package com.joaodematejr.conversormoedas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import static com.joaodematejr.conversormoedas.R.string.informe_um_valor;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewHolder mViewHolder = new ViewHolder();
 
@@ -26,8 +30,33 @@ public class MainActivity extends AppCompatActivity {
         this.mViewHolder.textEuro = findViewById(R.id.text_euro);
         this.mViewHolder.buttonCalculate = findViewById(R.id.button_calculate);
 
+        this.mViewHolder.buttonCalculate.setOnClickListener(this);
+        this.mViewHolder.textDolar.setOnClickListener(this);
+
+        this.clearValues();
+
+
+
     }
-    
+    @Override
+    public void onClick(View v){
+        if (v.getId() == R.id.button_calculate){
+        //LÓGICA
+            String value = this.mViewHolder.editValue.getText().toString();
+            if ("".equals(value)){
+                //MOSTRAR MENSAGEM PARA USUARIO
+                Toast.makeText(this, this.getString(informe_um_valor), Toast.LENGTH_LONG).show();
+            }else{
+
+            }
+        }
+    }
+
+    private void clearValues(){
+        this.mViewHolder.textDolar.setText("");
+        this.mViewHolder.textEuro.setText("");
+    }
+
     private static class ViewHolder {
         EditText editValue;
         TextView textDolar;
