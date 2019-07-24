@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="5dp"
     android:orientation="vertical"
+
     tools:context=".MainActivity">
 
     <TextView
@@ -43,7 +45,7 @@
         android:id="@+id/button_calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="teste"
+        android:background="@color/colorAccent"
         android:text="Calcular" />
 
 
