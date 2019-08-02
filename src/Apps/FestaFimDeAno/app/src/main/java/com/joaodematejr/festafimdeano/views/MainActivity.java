@@ -1,4 +1,4 @@
-package com.joaodematejr.festafimdeano;
+package com.joaodematejr.festafimdeano.views;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
@@ -6,6 +6,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import com.joaodematejr.festafimdeano.R;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
