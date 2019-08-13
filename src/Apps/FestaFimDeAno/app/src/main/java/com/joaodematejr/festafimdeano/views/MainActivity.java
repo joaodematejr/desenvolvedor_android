@@ -15,7 +15,7 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ViewHolder mViewHolder = new ViewHolder();
-    private static SimpleDateFormat  SIMPLE_DATE_FORMAT = new SimpleDateFormat("dd/MM/YYYY");
+    private static SimpleDateFormat  SIMPLE_DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
